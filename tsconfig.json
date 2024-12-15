@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "types": [
+      "vite/client",
+      "unplugin-vue-macros/macros-global",
+      "unplugin-vue-router/client"
+    ],
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@/app/*": [
+        "src/app/*"
+      ],
+      "@/assets/*": [
+        "src/assets/*"
+      ],
+      "@/modules/*": [
+        "src/modules/*"
+      ],
+      "@modules/auth": [
+        "src/modules/auth/index.ts"
+      ],
+    }
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "eslint.config.js",
+    "postcss.config.js",
+    "tailwind.config.js"
+  ]
+}
