@@ -31,6 +31,10 @@ export default defineConfig({
         {
           src: 'src/modules/main/pages',
           path: ''
+        },
+        {
+          src: 'src/modules/auth/pages',
+          path: '/auth/'
         }
       ]
     }),
